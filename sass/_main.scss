@@ -1,0 +1,12 @@
+.main {
+  position: relative;
+  top: $nav__height;
+}
+
+@media (min-width: $vp__desktop) {
+  .main {
+    top: 0;
+    left: $nav__height;
+    width: calc(100% - 3.9rem);
+  }
+}

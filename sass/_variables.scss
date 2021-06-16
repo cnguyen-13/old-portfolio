@@ -1,0 +1,19 @@
+//colors
+$color__primary: #5661ea;
+$color__primary--lighter: lighten(#5661ea, 3%);
+$color__cta: #f7fd04;
+$color__black: #231f20;
+$color__white: #ffffff;
+$color__required: #e94445;
+
+//height
+$nav__height: 3.9rem;
+
+$dimen__skills__logo: clamp(3rem, 10vw, 7rem);
+$dimen__padding--horizontal: clamp(5%, 7vw, 10%);
+
+//Viewport
+$vp__phone--large: 31rem;
+$vp__tablet: 48rem;
+$vp__tablet--larger: 51rem;
+$vp__desktop: 75rem;

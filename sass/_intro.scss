@@ -1,0 +1,98 @@
+.intro {
+	&__half {
+		padding: 11% $dimen__padding--horizontal;
+		// min-height: 50vh;
+
+		&--dark {
+			color: $color__white;
+			background-color: $color__primary--lighter;
+		}
+
+		&--light {
+			color: $color__black;
+		}
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+	}
+
+	&__paragraph {
+		opacity: 0.8;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	&__button {
+		padding: 0.75rem 1.75rem;
+		transition: transform 0.3s linear;
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		text-decoration: none;
+		color: $color__white;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+
+		&--learn {
+			color: $color__black;
+			background-color: $color__cta;
+		}
+
+		&--github {
+			border: 1px solid $color__white;
+		}
+	}
+
+	&__github-icon {
+		width: 2.25rem;
+	}
+
+	&__button-text {
+		text-align: center;
+		color: inherit;
+		font-size: 1.25rem;
+	}
+}
+
+@media (min-width: $vp__phone--large) {
+	.intro {
+		&__buttons {
+			flex-direction: row;
+		}
+	}
+}
+
+@media (min-width: $vp__tablet) {
+	.intro {
+		&__half {
+			display: flex;
+		}
+	}
+}
+
+@media (min-width: $vp__desktop) {
+	.intro {
+		min-height: 100vh;
+		display: flex;
+
+		&__half {
+			flex: 1;
+		}
+	}
+}
