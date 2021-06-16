@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger)
 
+const projectTextPieces = gsap.utils.toArray(".projects__text-piece")
 const cards = gsap.utils.toArray(".projects__card")
 
 const projectsTl = gsap.timeline({
@@ -11,18 +12,15 @@ const projectsTl = gsap.timeline({
 	paused: true,
 })
 
-projectsTl.from(".projects__text", {
-	x: "-0.5rem",
-	opacity: 0,
-})
-// .staggerFrom(
-// 	cards,
-// 	0.3,
-// 	{
-// 		opacity: 0,
-// 	},
-// 	0.3
-// )
+projectsTl.staggerFrom(
+	projectTextPieces,
+	0.3,
+	{
+		x: "-0.5rem",
+		opacity: 0,
+	},
+	0.1
+)
 
 cards.forEach(card => {
 	gsap.to(card, {

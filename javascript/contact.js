@@ -1,12 +1,9 @@
-gsap.registerPlugin(ScrollTrigger)
-
 const contactTl = gsap.timeline({
 	paused: true,
 	scrollTrigger: {
 		trigger: ".contact",
 		start: "top 25%",
 		end: "10% 25%",
-		markers: true,
 		toggleActions: "play none none none",
 	},
 })

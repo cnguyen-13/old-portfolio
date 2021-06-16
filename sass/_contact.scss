@@ -1,7 +1,7 @@
 .contact {
 	&__half {
-		box-sizing: content-box;
-		//padding: 11% clamp(5%, 7vw, 10%);
+		//box-sizing: content-box;
+		padding: 11% clamp(5%, 7vw, 10%);
 		min-height: 100vh;
 		// background: linear-gradient(
 		// 	45deg,
@@ -17,11 +17,10 @@
 
 	&__form {
 		width: 100%;
-		margin: 11% clamp(5%, 7vw, 10%);
+		//margin: 11% clamp(5%, 7vw, 10%);
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
-		transform: translateX(-1rem);
 	}
 
 	&__title {
@@ -76,9 +75,10 @@
 		transition: background-color 0.3s linear;
 		transition: color 0.3s linear;
 		transition: border 0.3s linear;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
 
 		&:hover {
-			color: $color__black;
 			border: 1px solid $color__cta;
 			background-color: $color__cta;
 		}
