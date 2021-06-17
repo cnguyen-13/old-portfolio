@@ -45,7 +45,6 @@
 		opacity: 0.8;
 	}
 
-	//logos
 	&__logos {
 		display: flex;
 		flex-wrap: wrap;
@@ -60,7 +59,7 @@
 		transition: transform 0.3s ease-out;
 
 		&:hover {
-			transform: scale(1.05);
+			transform: scale(1.05) !important;
 		}
 	}
 }
@@ -78,6 +77,7 @@
 	.skills {
 		min-height: 100vh;
 		display: flex;
+		flex: 1;
 
 		&__half {
 			flex: 1;

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./src/styles/styles.min.css" />
+  <link rel="stylesheet" href="./styles.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
     integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -14,7 +14,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./javascript/navigation.js" defer></script>
   <script src="./javascript/initial.js" defer></script>
-  <script src="./javascript/main.js" defer></script>
   <script src="./javascript/projects.js" defer></script>
   <script src="./javascript/contact.js" defer></script>
   <script src="./javascript/skills.js" defer></script>
@@ -25,7 +24,7 @@
   <!-- Navigation Bar -->
   <header class="nav">
     <div class="nav__misc">
-      <h1 class="nav__title">C.N</h1>
+      <h1 class="nav__title">CN</h1>
       <img class="nav__hamburger" src="./images/misc/hamburger.svg" alt="hamburger menu" />
     </div>
     <nav class="nav__links">
@@ -50,7 +49,7 @@
   <!-- Main Section -->
   <main class="main">
     <!-- Intro Section -->
-    <section id="intro" class="intro">
+    <section id="intro" class="intro portfolio__section">
       <div class="intro__half intro__half--dark">
         <div class="intro__text">
           <h2 class="intro__title intro__text-piece">Hello, I'm Christian Nguyen!</h2>
@@ -82,7 +81,7 @@
     </section>
     <!-- End Intro -->
     <!-- Skills Section-->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills portfolio__section">
       <div class="skills__half skills__half--dark">
         <div class="skills__text">
           <h2 class="skills__title skills__text-piece">Skills</h2>
@@ -128,7 +127,7 @@
     </section>
     <!-- End Skills -->
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects portfolio__section">
       <div class="projects__half projects__half--dark">
         <section class="projects__text">
           <h2 class="projects__title projects__text-piece">Projects</h2>
@@ -141,12 +140,18 @@
           <section class="projects__sub-section">
             <h3 class="projects__sub-title projects__text-piece">Projects List</h3>
             <ul class="projects__list">
-              <li class="projects__list-item projects__text-piece">1. Weather App</li>
-              <li class="projects__list-item projects__text-piece">2. The Cookbook Reference</li>
-              <li class="projects__list-item projects__text-piece">3. Indian Restaurant</li>
-              <li class="projects__list-item projects__text-piece">4. Easybank Challenge</li>
-              <li class="projects__list-item projects__text-piece">5. Room homepage Challenge</li>
-              <li class="projects__list-item projects__text-piece">6. Portfolio</li>
+              <li class="projects__list-item projects__text-piece"><a href="#weather" class="projects__page-link">1.
+                  Weather App</a></li>
+              <li class="projects__list-item projects__text-piece"><a href="#cookbook" class="projects__page-link">2.
+                  The Cookbook Reference</a></li>
+              <li class="projects__list-item projects__text-piece"><a href="#easybank" class="projects__page-link">3.
+                  Easybank Challenge</a></li>
+              <li class="projects__list-item projects__text-piece"><a href="#room" class="projects__page-link">4. Room
+                  homepage Challenge</a></li>
+              <li class="projects__list-item projects__text-piece"><a href="#indian" class="projects__page-link">5.
+                  Indian Restaurant</a></li>
+              <li class="projects__list-item projects__text-piece"><a href="#portfolio" class="projects__page-link">6.
+                  Portfolio</a></li>
             </ul>
           </section>
         </section>
@@ -154,7 +159,7 @@
       <div class="projects__half projects__half--light">
         <div class="projects__cards">
           <!-- Card # 1-->
-          <div class="projects__card">
+          <div class="projects__card" id="weather">
             <div class="projects__card-text">
               <header class="projects__card-header">
                 <h3 class="projects__card-title">Weather App</h3>
@@ -185,20 +190,18 @@
           </div>
           <!-- End Card # 1-->
           <!-- Card # 2-->
-          <div class="projects__card">
+          <div class="projects__card" id="cookbook">
             <div class="projects__card-text">
               <header class="projects__card-header">
                 <h3 class="projects__card-title">Cookbook Reference</h3>
                 <p class="projects__card-subtitle">Project #2</p>
               </header>
-              <p class="projects__card-description">Users looking for new and delicious recipes that meets their
-                nutritional needs can do just that!
-                Using the Spoonacular API, this project allows users to filter results based on ingredients, nutritional
-                values, and much more. Recipes
-                can be "liked" and saved in order to build a recipe list of interested recipes using local storage.
+              <p class="projects__card-description">Users looking for new and delicious recipes can do just that! Using
+                the Spoonacular API, this project allows users to filter results based on ingredients, nutritional
+                values, and much more.
               </p>
-              <p class="projects__card-tags">HTML, CSS/SCSS (BEM Convention), JavaScript, React (Custom Hooks, GSAP,
-                React Router DOM), API consumption, Local Storage.</p>
+              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript, React, GSAP, API consumption, Local Storage.
+              </p>
             </div>
             <div class="projects__card-img-container">
               <img class="projects__card-img" src="./images/projects/tcr.png" alt="The Cookbook Reference Site">
@@ -218,16 +221,17 @@
           </div>
           <!-- End Card # 2-->
           <!-- Card # 3-->
-          <div class="projects__card">
+          <div class="projects__card" id="easybank">
             <div class="projects__card-text">
               <header class="projects__card-header">
                 <h3 class="projects__card-title">Easybank FM Challenge</h3>
                 <p class="projects__card-subtitle">Project #3</p>
               </header>
-              <p class="projects__card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-                ratione, aliquid voluptatibus soluta nobis voluptate ducimus a doloribus reiciendis earum fuga adipisci
-                cumque repellendus sunt ea enim vero. Odit, eaque?</p>
-              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript, React, API consumption, Figma(Design)</p>
+              <p class="projects__card-description">A Frontend Mentor Challenge used to focus on the ability to take a
+                design of a landing page
+                and transform it into reality through code.
+              </p>
+              <p class="projects__card-tags">HTML, CSS/SCSS</p>
             </div>
             <div class="projects__card-img-container">
               <img class="projects__card-img" src="./images/projects/easy-bank.png" alt="Easybank FM Challenge Site">
@@ -247,18 +251,16 @@
           </div>
           <!-- End Card # 3-->
           <!-- Card # 4-->
-          <div class="projects__card">
+          <div class="projects__card" id="room">
             <div class="projects__card-text">
               <header class="projects__card-header">
-                <h3 class="projects__card-title">Room Homepage FM Challenge</h3>
+                <h3 class="projects__card-title">Room FM Challenge</h3>
                 <p class="projects__card-subtitle">Project #4</p>
               </header>
-              <p class="projects__card-description">A website for a fictional Indian
-                restaurant, featuring the typical pages
-                including about, menu, and gallery of
-                the food served. The focus was on web
-                design and responsive design.</p>
-              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript, GSAP</p>
+              <p class="projects__card-description">Another Frontend Mentor Challenge. Concepts focused on are CSS
+                Grid and a sliding to/from each different section using JavaScript.
+              </p>
+              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript</p>
             </div>
             <div class="projects__card-img-container">
               <img class="projects__card-img" src="./images/projects/home-room.png"
@@ -279,7 +281,7 @@
           </div>
           <!-- End Card # 4-->
           <!-- Card # 5-->
-          <div class="projects__card">
+          <div class="projects__card" id="indian">
             <div class="projects__card-text">
               <header class="projects__card-header">
                 <h3 class="projects__card-title">Indian Food</h3>
@@ -310,16 +312,16 @@
           </div>
           <!-- End Card # 5-->
           <!-- Card # 6-->
-          <div class="projects__card">
+          <div class="projects__card" id="portfolio">
             <div class="projects__card-text">
               <header class="projects__card-header">
                 <h3 class="projects__card-title">My Portfolio</h3>
                 <p class="projects__card-subtitle">Project #6</p>
               </header>
-              <p class="projects__card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-                ratione, aliquid voluptatibus soluta nobis voluptate ducimus a doloribus reiciendis earum fuga adipisci
-                cumque repellendus sunt ea enim vero. Odit, eaque?</p>
-              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript, React, API consumption, Figma(Design)</p>
+              <p class="projects__card-description">Looks familiar? My personal portfolio using the half and half
+                design. Used Figma to create mockup designs for phone, tablet, and desktop views and later transformed
+                into code.</p>
+              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript, GSAP, Figma</p>
             </div>
             <div class="projects__card-img-container">
               <img class="projects__card-img" src="./images/projects/portfolio.png" alt="Portfolio Site">
@@ -343,7 +345,7 @@
     </section>
     <!-- End Projects Section-->
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact portfolio__section" id="contact">
       <div class="contact__half contact__half--form">
         <form action="https://formspree.io/f/xbjqygeq" method="POST" class="contact__form">
           <h2 class="contact__title contact__text-piece">Contact</h2>

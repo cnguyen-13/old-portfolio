@@ -29,7 +29,6 @@ cards.forEach(card => {
 			start: `-25% 25%`,
 			end: "-15% 25%",
 			scrub: 1,
-			//markers: true,
 		},
 		opacity: 1,
 	})
@@ -40,7 +39,6 @@ cards.forEach(card => {
 			start: "75% 15%",
 			end: "bottom 15%",
 			scrub: 1,
-			//markers: { startColor: "blue", endColor: "orange" },
 		},
 		opacity: 1,
 	})

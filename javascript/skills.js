@@ -1,5 +1,7 @@
 const skillsTextPieces = gsap.utils.toArray(".skills__text-piece")
 const logos = gsap.utils.toArray(".skills__logo")
+const DURATION = 0.3
+const DELAY = 0.1
 
 const skillsTl = gsap.timeline({
 	scrollTrigger: {
@@ -11,22 +13,22 @@ const skillsTl = gsap.timeline({
 
 skillsTl.staggerFrom(
 	skillsTextPieces,
-	0.3,
+	DURATION,
 	{
 		x: "-0.5rem",
 		opacity: 0,
 	},
-	0.1
+	DELAY
 )
 
 skillsTl.staggerFrom(
 	logos,
-	0.3,
+	DURATION,
 	{
 		x: "-0.5rem",
 		rotate: -15,
 		opacity: 0,
 	},
-	0.1,
+	DELAY,
 	"-=1.5"
 )

@@ -44,6 +44,16 @@
 		opacity: 0.8;
 	}
 
+	&__page-link {
+		color: $color__white;
+		text-decoration: none;
+		transition: color 0.3s linear;
+
+		&:hover {
+			color: $color__cta;
+		}
+	}
+
 	&__cards {
 		display: flex;
 		flex-direction: column;
@@ -167,6 +177,7 @@
 	.projects {
 		min-height: 100vh;
 		display: flex;
+		flex: 1;
 
 		&__half {
 			flex: 1;
