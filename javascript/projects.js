@@ -27,18 +27,8 @@ cards.forEach(card => {
 		scrollTrigger: {
 			trigger: card,
 			start: `-25% 25%`,
-			end: "-15% 25%",
-			scrub: 1,
-		},
-		opacity: 1,
-	})
-
-	gsap.from(card, {
-		scrollTrigger: {
-			trigger: card,
-			start: "75% 15%",
-			end: "bottom 15%",
-			scrub: 1,
+			end: "bottom 25%",
+			toggleActions: "play reverse play reverse",
 		},
 		opacity: 1,
 	})
