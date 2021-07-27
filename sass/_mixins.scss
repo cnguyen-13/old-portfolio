@@ -1,0 +1,27 @@
+@mixin lightBgDarkText() {
+  color: $color__primary;
+  background-color: $color__white;
+}
+
+@mixin darkBgLightText() {
+  color: $color__black;
+  background-color: $color__primary;
+}
+
+@mixin flexCenterContent() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexSpaceBetween() {
+  @include flexCenterContent();
+  justify-content: space-between;
+}
+
+@mixin navBorder() {
+  border-bottom: 1px solid $color__primary;
+  @media (min-width: $vp__desktop) {
+    border: none;
+  }
+}

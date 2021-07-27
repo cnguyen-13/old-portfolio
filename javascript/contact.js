@@ -3,13 +3,16 @@ const contactTl = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".contact",
 		start: "top 25%",
-		end: "10% 25%",
-		toggleActions: "play none none none",
+		end: "top 25%",
+		toggleActions: "play none reverse none",
 	},
 })
 
 contactTl
-	.to(".contact__half--form", { width: "100%", backgroundColor: "#5661ea" })
+	.to(".contact__half--form", {
+		width: "100%",
+		backgroundColor: "lighten(#5661ea, 3%)",
+	})
 	.fromTo(
 		".contact__text-piece",
 		{

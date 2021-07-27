@@ -1,105 +1,113 @@
 .intro {
-	&__half {
-		padding: 11% $dimen__padding--horizontal;
-		// min-height: 50vh;
+  &__half {
+    padding: $padding__half;
 
-		&--dark {
-			color: $color__white;
-			background-color: $color__primary--lighter;
-		}
+    &--dark {
+      color: $color__white;
+      background-color: $color__primary;
+    }
 
-		&--light {
-			min-height: 50vh;
-			padding: 0;
-			color: $color__black;
-			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-				url("../../images/misc/intro-image.jpg");
-			background-position: bottom center;
-			background-attachment: fixed;
-		}
-	}
+    &--light {
+      //border: $dimen__top-border solid $color__white;
+      min-height: 50vh;
+      // padding: 0;
+      // border: 3rem solid $color__white;
+      // color: $color__black;
+      // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      //   url('../../images/misc/intro-image.jpg');
+      // background-position: bottom center;
+      // background-attachment: fixed;
+    }
+  }
 
-	&__text {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
 
-	&__title {
-		text-transform: uppercase;
-		letter-spacing: 0.1rem;
-	}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-	&__paragraph {
-		opacity: 0.8;
-	}
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: $ls__main;
+  }
 
-	&__buttons {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
+  &__paragraph {
+    opacity: 0.8;
+  }
 
-	&__button {
-		padding: 0.75rem 1.75rem;
-		transition: transform 0.3s linear;
-		width: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 1rem;
-		text-decoration: none;
-		color: $color__white;
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-		&:hover {
-			transform: scale(1.05) !important;
-		}
+  &__button {
+    @include flexCenterContent();
+    padding: 0.75rem 1.75rem;
+    transition: transform 0.3s linear;
+    width: auto;
+    gap: 1rem;
+    text-decoration: none;
+    color: $color__white;
+    height: 50px;
 
-		&--learn {
-			color: $color__white;
-			background-color: $color__cta;
-		}
+    &:hover {
+      transform: scale(1.05) !important;
+    }
 
-		&--github {
-			border: 1px solid $color__white;
-		}
-	}
+    &--learn {
+      color: $color__white;
+      background-color: $color__attention;
+    }
 
-	&__github-icon {
-		width: 2.25rem;
-	}
+    &--github {
+      border: 1px solid $color__white;
+    }
+  }
 
-	&__button-text {
-		text-align: center;
-		color: inherit;
-		letter-spacing: 0.1rem;
-	}
+  &__github-icon {
+    width: 2.25rem;
+  }
+
+  &__button-text {
+    text-align: center;
+    color: inherit;
+    letter-spacing: $ls__main;
+  }
 }
 
 @media (min-width: $vp__phone--large) {
-	.intro {
-		&__buttons {
-			flex-direction: row;
-		}
-	}
+  .intro {
+    &__buttons {
+      flex-direction: row;
+    }
+
+    &__button {
+      height: auto;
+    }
+  }
 }
 
 @media (min-width: $vp__tablet) {
-	.intro {
-		&__half {
-			display: flex;
-		}
-	}
+  .intro {
+    &__half {
+      display: flex;
+    }
+  }
 }
 
 @media (min-width: $vp__desktop) {
-	.intro {
-		flex: 1;
-		min-height: 100vh;
-		display: flex;
+  .intro {
+    min-height: 100vh;
+    display: flex;
 
-		&__half {
-			width: 50%;
-		}
-	}
+    &__half {
+      flex: 1;
+    }
+  }
 }

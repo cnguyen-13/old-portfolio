@@ -1,205 +1,188 @@
 .projects {
-	&__half {
-		padding: 11% clamp(5%, 7vw, 10%);
-		// min-height: 50vh;
+  &__half {
+    padding: $padding__half;
 
-		&--dark {
-			color: $color__white;
-			background-color: $color__primary--lighter;
-		}
+    &--dark {
+      color: $color__white;
+      background-color: $color__primary;
+    }
 
-		&--light {
-			color: $color__black;
-		}
-	}
+    &--light {
+      color: $color__black;
+    }
+  }
 
-	&__text {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-	&__title {
-		text-transform: uppercase;
-		letter-spacing: 0.1rem;
-	}
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: $ls__main;
+  }
 
-	&__paragraph {
-		opacity: 0.8;
-	}
+  &__paragraph {
+    opacity: 0.8;
+  }
 
-	&__sub-section {
-	}
+  &__sub-section {
+  }
 
-	&__sub-title {
-		letter-spacing: 0.1rem;
-		margin-bottom: 1rem;
-	}
+  &__sub-title {
+    letter-spacing: $ls__main;
+    margin-bottom: 1rem;
+  }
 
-	&__list {
-		list-style-type: none;
-	}
+  &__list {
+    list-style-type: none;
+  }
 
-	&__list-item {
-		opacity: 0.8;
-	}
+  &__list-item {
+    opacity: 0.8;
+  }
 
-	&__page-link {
-		color: $color__white;
-		text-decoration: none;
-		transition: color 0.3s linear;
+  &__page-link {
+    color: $color__white;
+    text-decoration: none;
+    transition: color 0.3s linear;
 
-		&:hover {
-			color: $color__cta;
-		}
-	}
+    &:hover {
+      color: $color__attention;
+    }
+  }
 
-	&__cards {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-	}
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
 
-	&__card {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-		opacity: 0.2;
-	}
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 0.2;
+  }
 
-	&__card-text {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
+  &__card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-	&__card-header {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
+  &__card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-	&__card-title {
-		font-size: 1.5rem;
-	}
+  &__card-title {
+    font-size: 1.5rem;
+  }
 
-	&__card-subtitle {
-		opacity: 0.8;
-	}
+  &__card-subtitle {
+    opacity: 0.8;
+  }
 
-	&__card-description {
-		opacity: 0.8;
-	}
+  &__card-description {
+    opacity: 0.8;
+  }
 
-	&__card-tags {
-		opacity: 0.8;
-		font-style: italic;
-	}
+  &__card-tags {
+    opacity: 0.8;
+    font-style: italic;
+  }
 
-	&__card-img-container {
-		width: 100%;
-	}
+  &__card-img-container {
+    width: 100%;
+  }
 
-	&__card-img {
-		width: 100%;
-	}
+  &__card-img {
+    width: 100%;
+  }
 
-	&__card-buttons {
-		display: flex;
-		justify-content: space-between;
-		gap: 1.5rem;
-	}
+  &__card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
 
-	&__card-button {
-		flex: 1;
-		background-color: $color__cta;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 1rem;
-		padding: 0.5rem 1.5rem;
-		text-decoration: none;
-		transition: transform 0.3s linear;
+  &__card-button {
+    @include flexCenterContent();
+    flex: 1;
+    background-color: $color__primary;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 
-		&:hover {
-			transform: scale(1.05);
-		}
-	}
+    &:hover {
+      background-color: $color__attention;
+      transform: scale(1.05);
+    }
+  }
 
-	&__card-button-img {
-		width: 2rem;
-	}
+  &__card-button-img {
+    width: 2rem;
+  }
 
-	&__card-button-text {
-		color: $color__white;
-	}
+  &__card-button-text {
+    color: $color__white;
+  }
 }
 
 @media (min-width: $vp__tablet) {
-	.projects {
-		&__card-header {
-			flex-direction: row;
-			align-items: flex-end;
-			gap: 1rem;
-		}
-	}
+  .projects {
+    &__card-header {
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 1rem;
+    }
+  }
 }
 
 @media (min-width: $vp__tablet--larger) {
-	.projects {
-		&__half {
-			display: flex;
+  .projects {
+    &__cards {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
 
-			&--light {
-				display: flex;
-			}
-		}
+    &__card {
+      margin: 0;
+      width: 47%;
+    }
 
-		&__cards {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-
-		&__card {
-			margin: 0;
-			width: 47%;
-		}
-
-		&__card-buttons {
-			width: 50%;
-		}
-	}
+    &__card-buttons {
+      width: 50%;
+    }
+  }
 }
 
 @media (min-width: $vp__desktop) {
-	.projects {
-		min-height: 100vh;
-		display: flex;
-		flex: 1;
+  .projects {
+    min-height: 100vh;
+    display: flex;
 
-		&__half {
-			flex: 1;
+    &__half {
+      flex: 1;
 
-			&--dark {
-				align-self: flex-start;
-				position: sticky;
-				height: 100vh;
-				top: 0;
-			}
+      &--dark {
+        position: sticky;
+        height: 100vh;
+        top: 0;
+      }
+    }
 
-			&--light {
-				width: 70%;
-			}
-		}
+    &__cards {
+      gap: 7rem;
+    }
 
-		&__cards {
-			gap: 7rem;
-		}
-
-		&__card {
-			width: 100%;
-		}
-	}
+    &__card {
+      width: 100%;
+    }
+  }
 }

@@ -1,17 +1,24 @@
 //colors
 $color__primary: #5661ea;
-$color__primary--lighter: lighten(#5661ea, 3%);
-//$color__cta: #f7fd04;
 $color__black: #231f20;
 $color__white: #ffffff;
-$color__required: #e94445;
-$color__cta: #e94445;
+$color__attention: #e94445;
 
 //height
 $nav__height: 3.9rem;
-
+$height__mobile-links: calc(100vh - 3.9rem);
 $dimen__skills__logo: clamp(3rem, 10vw, 7rem);
-$dimen__padding--horizontal: clamp(5%, 7vw, 10%);
+
+//padding
+$padding__nav: 0 clamp(5%, 7vw, 10%);
+$padding__half: 11% clamp(5%, 7vw, 10%);
+
+//Misc
+$ls__main: 0.1rem;
+$opacity__lighter: 0.8;
+$opacity__lightest: 0.2;
+$mask: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../../images/misc/intro-image.jpg');
 
 //Viewport
 $vp__phone--large: 31rem;

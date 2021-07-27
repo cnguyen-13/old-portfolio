@@ -1,93 +1,90 @@
 .skills {
-	&__half {
-		padding: 11% $dimen__padding--horizontal;
-		display: flex;
+  &__half {
+    padding: $padding__half;
+    display: flex;
 
-		&--dark {
-			color: $color__white;
-			background-color: $color__primary--lighter;
-		}
+    &--dark {
+      color: $color__white;
+      background-color: $color__primary;
+    }
 
-		&--light {
-			min-height: 25vh;
-			color: $color__black;
-		}
-	}
+    &--light {
+      min-height: 25vh;
+      color: $color__black;
+    }
+  }
 
-	&__text {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-	&__title {
-		text-transform: uppercase;
-		letter-spacing: 0.1rem;
-	}
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: $ls__main;
+  }
 
-	&__paragraph {
-		opacity: 0.8;
-	}
+  &__paragraph {
+    opacity: 0.8;
+  }
 
-	&__sub-section {
-	}
+  &__sub-section {
+  }
 
-	&__sub-title {
-		letter-spacing: 0.1rem;
-		margin-bottom: 1rem;
-	}
+  &__sub-title {
+    letter-spacing: $ls__main;
+    margin-bottom: 1rem;
+  }
 
-	&__list {
-		list-style-type: none;
-	}
+  &__list {
+    list-style-type: none;
+  }
 
-	&__list-item {
-		opacity: 0.8;
-	}
+  &__list-item {
+    opacity: 0.8;
+  }
 
-	&__logos {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem;
-	}
+  &__logos {
+    @include flexCenterContent();
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 
-	&__logo {
-		width: $dimen__skills__logo;
-		height: $dimen__skills__logo;
-		transition: transform 0.3s ease-out;
+  &__logo {
+    width: $dimen__skills__logo;
+    height: $dimen__skills__logo;
+    transition: transform 0.3s ease-out;
 
-		&:hover {
-			transform: scale(1.05) !important;
-		}
-	}
+    &:hover {
+      transform: scale(1.05) !important;
+    }
+  }
 }
 
 @media (min-width: $vp__tablet) {
-	.skills {
-		&__logos {
-			align-items: center;
-			justify-content: flex-start;
-		}
-	}
+  .skills {
+    &__logos {
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
 }
 
 @media (min-width: $vp__desktop) {
-	.skills {
-		min-height: 100vh;
-		display: flex;
-		flex: 1;
+  .skills {
+    min-height: 100vh;
+    display: flex;
 
-		&__half {
-			flex: 1;
-		}
+    &__half {
+      flex: 1;
+    }
 
-		&__logos {
-			height: 50%;
-			align-items: flex-start;
-			justify-content: flex-start;
-			flex-wrap: wrap;
-		}
-	}
+    &__logos {
+      height: 50%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
 }

@@ -3,9 +3,8 @@
 	transition: background-color 0.3s linear;
 	line-height: 1.5;
 
-	&--disabled {
+	&--unscrollable {
 		overflow-y: hidden;
-		background-color: rgba(0, 0, 0, 0.8);
 	}
 }
 

@@ -1,390 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Christian Nguyen Frontend Portfolio" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Christian Nguyen Frontend Portfolio">
-  <link rel="stylesheet" href="./styles.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
-    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
-    integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./javascript/navigation.js" defer></script>
-  <script src="./javascript/initial.js" defer></script>
-  <script src="./javascript/projects.js" defer></script>
-  <script src="./javascript/contact.js" defer></script>
-  <script src="./javascript/skills.js" defer></script>
-  <title>Christian Nguyen | Portfolio</title>
-</head>
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+      integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./javascript/navigation.js" defer></script>
+    <script src="./javascript/initial.js" defer></script>
+    <script src="./javascript/projects.js" defer></script>
+    <script src="./javascript/contact.js" defer></script>
+    <script src="./javascript/skills.js" defer></script>
+    <title>Christian Nguyen | Portfolio</title>
+  </head>
 
-<body class="body">
-
-  <!-- Navigation Bar -->
-  <header class="nav">
-    <div class="nav__misc">
-      <h1 class="nav__title">CN</h1>
-      <img class="nav__hamburger" src="./images/misc/hamburger.svg" alt="hamburger menu" />
-    </div>
-    <nav class="nav__links">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="#intro" class="nav__anchor">Introduction</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#skills" class="nav__anchor">Skills</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#projects" class="nav__anchor">Projects</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#contact" class="nav__anchor">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- End Navigation Bar -->
-
-  <!-- Main Section -->
-  <main class="main">
-
-    <!-- Intro Section -->
-    <section id="intro" class="intro portfolio__section">
-      <div class="intro__half intro__half--dark">
-        <div class="intro__text">
-          <h2 class="intro__title intro__text-piece">Hello, I'm Christian Nguyen!</h2>
-          <p class="intro__paragraph intro__text-piece">
-            A frontend developer with experience
-            and knowledge in research and computer hardware to
-            create solutions based on specifications and
-            requirements through planning, designing, developing, and
-            testing. Seeking an entry-level front-end developer
-            position to utilize and strengthen current skills while
-            developing new ones by working in a
-            professional setting with others and
-            independently.
-          </p>
-          <div class="intro__buttons">
-            <a class="intro__button intro__button--learn intro__text-piece" href="#skills" role="button"><span
-                class="intro__button-text">Learn More!</span></a>
-            <a class="intro__button intro__button--github intro__text-piece" href="https://github.com/cnguyen-13"
-              role="button" target="_blank"><img class="intro__github-icon" src="images/misc/github.svg" alt="" /><span
-                class="intro__button-text">GitHub</span></a>
-          </div>
+  <body class="body">
+    <!-- Navigation Bar -->
+    <header class="nav">
+      <div class="nav__misc">
+        <h1 class="nav__title">CN</h1>
+        <div class="nav__hamburger-container">
+          <img
+            class="nav__hamburger"
+            src="./images/misc/hamburger.svg"
+            alt="hamburger menu button"
+          />
         </div>
       </div>
 
-      <div class="intro__half intro__half--light"></div>
-    </section>
-    <!-- End Intro Section -->
+      <nav class="nav__links">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#intro" class="nav__anchor">Introduction</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#skills" class="nav__anchor">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#projects" class="nav__anchor">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#contact" class="nav__anchor">Contact</a>
+          </li>
+          <li class="nav__list-item">
+            <a
+              href="https://github.com/cnguyen-13"
+              class="nav__anchor"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Navigation Bar -->
 
-    <!-- Skills Section-->
-    <section id="skills" class="skills portfolio__section">
-      <div class="skills__half skills__half--dark">
-        <div class="skills__text">
-          <h2 class="skills__title skills__text-piece">Skills</h2>
-          <p class="skills__paragraph skills__text-piece">
-            A collection of front end technologies and skills I have learned and are continiously learning today
-          </p>
-          <section class="skills__sub-section">
-            <h3 class="skills__sub-title skills__text-piece">Technology</h3>
-            <ul class="skills__list">
-              <li class="skills__list-item skills__text-piece">• HTML5</li>
-              <li class="skills__list-item skills__text-piece">• CSS3</li>
-              <li class="skills__list-item skills__text-piece">• JavaScript</li>
-              <li class="skills__list-item skills__text-piece">• TypeScript</li>
-              <li class="skills__list-item skills__text-piece">• ReactJS</li>
-              <li class="skills__list-item skills__text-piece">• SASS/SCSS</li>
-              <li class="skills__list-item skills__text-piece">• BootStrap</li>
-            </ul>
+    <!-- Main Section -->
+    <main class="main">
+      <!-- Intro Section -->
+      <section id="intro" class="intro portfolio__section">
+        <div class="intro__half intro__half--dark">
+          <div class="intro__text">
+            <h2 class="intro__title intro__text-piece">
+              Hello, I'm Christian Nguyen!
+            </h2>
+            <p class="intro__paragraph intro__text-piece">
+              A frontend developer with experience and knowledge in research and
+              computer hardware to create solutions based on specifications and
+              requirements through planning, designing, developing, and testing.
+              Seeking an entry-level front-end developer position to utilize and
+              strengthen current skills while developing new ones by working in
+              a professional setting with others and independently.
+            </p>
+            <div class="intro__buttons">
+              <a
+                class="intro__button intro__button--learn intro__text-piece"
+                href="#skills"
+                role="button"
+                ><span class="intro__button-text">Learn More!</span></a
+              >
+              <a
+                class="intro__button intro__button--github intro__text-piece"
+                href="https://github.com/cnguyen-13"
+                role="button"
+                target="_blank"
+                ><img
+                  class="intro__github-icon"
+                  src="images/misc/github.svg"
+                  alt=""
+                /><span class="intro__button-text">GitHub</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="intro__half intro__half--light">
+          <img
+            class="intro__image"
+            src="./images/misc/intro-image.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- End Intro Section -->
+
+      <!-- Skills Section-->
+      <section id="skills" class="skills portfolio__section">
+        <div class="skills__half skills__half--dark">
+          <div class="skills__text">
+            <h2 class="skills__title skills__text-piece">Skills</h2>
+            <p class="skills__paragraph skills__text-piece">
+              A collection of front end technologies and skills I have learned
+              and are continiously learning today
+            </p>
+            <section class="skills__sub-section">
+              <h3 class="skills__sub-title skills__text-piece">Technology</h3>
+              <ul class="skills__list">
+                <li class="skills__list-item skills__text-piece">• HTML5</li>
+                <li class="skills__list-item skills__text-piece">• CSS3</li>
+                <li class="skills__list-item skills__text-piece">
+                  • JavaScript
+                </li>
+                <li class="skills__list-item skills__text-piece">
+                  • TypeScript
+                </li>
+                <li class="skills__list-item skills__text-piece">• ReactJS</li>
+                <li class="skills__list-item skills__text-piece">
+                  • SASS/SCSS
+                </li>
+                <li class="skills__list-item skills__text-piece">
+                  • BootStrap
+                </li>
+              </ul>
+            </section>
+            <section class="skills__sub-section">
+              <h3 class="skills__sub-title skills__text-piece">Others</h3>
+              <ul class="skills__list">
+                <li class="skills__list-item skills__text-piece">• Figma</li>
+                <li class="skills__list-item skills__text-piece">• GitHub</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div class="skills__half skills__half--light">
+          <div class="skills__logos">
+            <img
+              src="./images/tech/html.svg"
+              alt="html logo"
+              class="skills__logo"
+            /><img
+              src="./images/tech/css.svg"
+              alt="css logo"
+              class="skills__logo"
+            />
+            <img
+              src="./images/tech/js.svg"
+              alt="javascript logo"
+              class="skills__logo"
+            /><img
+              src="./images/tech/ts.svg"
+              alt="typescript logo"
+              class="skills__logo"
+            /><img
+              src="./images/tech/react.svg"
+              alt="react logo"
+              class="skills__logo"
+            />
+            <img
+              src="./images/tech/sass.svg"
+              alt="sass logo"
+              class="skills__logo"
+            /><img
+              src="./images/tech/bootstrap.svg"
+              alt="bootstrap logo"
+              class="skills__logo"
+            />
+            <img
+              src="./images/tech/figma.svg"
+              alt="figma logo"
+              class="skills__logo"
+            /><img
+              src="./images/tech/github.svg"
+              alt="github logo"
+              class="skills__logo"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End Skills -->
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects portfolio__section">
+        <div class="projects__half projects__half--dark">
+          <section class="projects__text">
+            <h2 class="projects__title projects__text-piece">Projects</h2>
+            <p class="projects__paragraph projects__text-piece">
+              These are projects created by me to learn front-end technologies
+              listed in the skills section above. All projects aside of ones
+              from challenge websites were designed by me in Figma (creating
+              views at different viewport sizes) before putting the design to
+              code. Here you may choose to view the code that goes into each
+              project or simply view the end results yourself!
+            </p>
+            <section class="projects__sub-section">
+              <h3 class="projects__sub-title projects__text-piece">
+                Projects List
+              </h3>
+              <ul class="projects__list">
+                <li class="projects__list-item projects__text-piece">
+                  <a href="#weather" class="projects__page-link"
+                    >1. Weather App</a
+                  >
+                </li>
+                <li class="projects__list-item projects__text-piece">
+                  <a href="#cookbook" class="projects__page-link"
+                    >2. The Cookbook Reference</a
+                  >
+                </li>
+                <li class="projects__list-item projects__text-piece">
+                  <a href="#easybank" class="projects__page-link"
+                    >3. Easybank Challenge</a
+                  >
+                </li>
+                <li class="projects__list-item projects__text-piece">
+                  <a href="#room" class="projects__page-link"
+                    >4. Room homepage Challenge</a
+                  >
+                </li>
+                <li class="projects__list-item projects__text-piece">
+                  <a href="#indian" class="projects__page-link"
+                    >5. Indian Restaurant</a
+                  >
+                </li>
+                <li class="projects__list-item projects__text-piece">
+                  <a href="#portfolio" class="projects__page-link"
+                    >6. Portfolio</a
+                  >
+                </li>
+              </ul>
+            </section>
           </section>
-          <section class="skills__sub-section">
-            <h3 class="skills__sub-title skills__text-piece">Others</h3>
-            <ul class="skills__list">
-              <li class="skills__list-item skills__text-piece">• Figma</li>
-              <li class="skills__list-item skills__text-piece">• GitHub</li>
-            </ul>
-          </section>
         </div>
-      </div>
 
-      <div class="skills__half skills__half--light">
-        <div class="skills__logos">
-          <img src="./images/tech/html.svg" alt="html logo" class="skills__logo" /><img src="./images/tech/css.svg"
-            alt="css logo" class="skills__logo" />
-          <img src="./images/tech/js.svg" alt="javascript logo" class="skills__logo" /><img src="./images/tech/ts.svg"
-            alt="typescript logo" class="skills__logo" /><img src="./images/tech/react.svg" alt="react logo"
-            class="skills__logo" />
-          <img src="./images/tech/sass.svg" alt="sass logo" class="skills__logo" /><img
-            src="./images/tech/bootstrap.svg" alt="bootstrap logo" class="skills__logo" />
-          <img src="./images/tech/figma.svg" alt="figma logo" class="skills__logo" /><img src="./images/tech/github.svg"
-            alt="github logo" class="skills__logo" />
+        <!-- Projects Showcase -->
+        <div class="projects__half projects__half--light">
+          <div class="projects__cards">
+            <!-- Card # 1-->
+            <div class="projects__card" id="weather">
+              <div class="projects__card-text">
+                <header class="projects__card-header">
+                  <h3 class="projects__card-title">Weather App</h3>
+                  <p class="projects__card-subtitle">Project #1</p>
+                </header>
+                <p class="projects__card-description">
+                  A Weather App that allows the user to choose any city in the
+                  world and view real time data about the weather, temperatures,
+                  wind speeds, and more in either metric or imperial units.
+                </p>
+                <p class="projects__card-tags">
+                  HTML, CSS/SASS, Typescript, ReactJS, Figma, API Consumption
+                </p>
+              </div>
+              <div class="projects__card-img-container">
+                <img
+                  class="projects__card-img"
+                  src="./images/projects/weather-app.png"
+                  alt="Weather App Site"
+                />
+              </div>
+              <div class="projects__card-buttons">
+                <a
+                  href="https://new-weather-app-cnguyen-13.vercel.app/"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/view.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">View</span>
+                </a>
+                <a
+                  href="https://github.com/cnguyen-13/your-weather-app"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/github.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">GitHub</span>
+                </a>
+              </div>
+            </div>
+            <!-- End Card # 1-->
+
+            <!-- Card # 2-->
+            <div class="projects__card" id="cookbook">
+              <div class="projects__card-text">
+                <header class="projects__card-header">
+                  <h3 class="projects__card-title">Cookbook Reference</h3>
+                  <p class="projects__card-subtitle">Project #2</p>
+                </header>
+                <p class="projects__card-description">
+                  Users looking for new and delicious recipes can do just that!
+                  Using the Spoonacular API, this project allows users to filter
+                  results based on ingredients, nutritional values, and much
+                  more.
+                </p>
+                <p class="projects__card-tags">
+                  HTML, CSS/SCSS, JavaScript, React, GSAP, API consumption,
+                  Local Storage.
+                </p>
+              </div>
+              <div class="projects__card-img-container">
+                <img
+                  class="projects__card-img"
+                  src="./images/projects/tcr.png"
+                  alt="The Cookbook Reference Site"
+                />
+              </div>
+              <div class="projects__card-buttons">
+                <a
+                  href="https://the-cookbook-reference-2.vercel.app/"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/view.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">View</span>
+                </a>
+                <a
+                  href="https://github.com/cnguyen-13/TRC-Remake"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/github.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">GitHub</span>
+                </a>
+              </div>
+            </div>
+            <!-- End Card # 2-->
+
+            <!-- Card # 3-->
+            <div class="projects__card" id="easybank">
+              <div class="projects__card-text">
+                <header class="projects__card-header">
+                  <h3 class="projects__card-title">Easybank FM Challenge</h3>
+                  <p class="projects__card-subtitle">Project #3</p>
+                </header>
+                <p class="projects__card-description">
+                  A Frontend Mentor Challenge used to focus on the ability to
+                  take a design of a landing page and transform it into reality
+                  through code.
+                </p>
+                <p class="projects__card-tags">HTML, CSS/SCSS</p>
+              </div>
+              <div class="projects__card-img-container">
+                <img
+                  class="projects__card-img"
+                  src="./images/projects/easy-bank.png"
+                  alt="Easybank FM Challenge Site"
+                />
+              </div>
+              <div class="projects__card-buttons">
+                <a
+                  href="https://easybank-landing-page-git-main-cnguyen-13.vercel.app/"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/view.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">View</span>
+                </a>
+                <a
+                  href="https://github.com/cnguyen-13/easybank-landing-page"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/github.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">GitHub</span>
+                </a>
+              </div>
+            </div>
+            <!-- End Card # 3-->
+
+            <!-- Card # 4-->
+            <div class="projects__card" id="room">
+              <div class="projects__card-text">
+                <header class="projects__card-header">
+                  <h3 class="projects__card-title">Room FM Challenge</h3>
+                  <p class="projects__card-subtitle">Project #4</p>
+                </header>
+                <p class="projects__card-description">
+                  Another Frontend Mentor Challenge. Concepts focused on are CSS
+                  Grid and a sliding to/from each different section using
+                  JavaScript.
+                </p>
+                <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript</p>
+              </div>
+              <div class="projects__card-img-container">
+                <img
+                  class="projects__card-img"
+                  src="./images/projects/home-room.png"
+                  alt="Room Home Page FM CHallenge Site"
+                />
+              </div>
+              <div class="projects__card-buttons">
+                <a
+                  href="https://room-homepage-kappa-five.vercel.app/"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/view.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">View</span>
+                </a>
+                <a
+                  href="https://github.com/cnguyen-13/room-homepage"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/github.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">GitHub</span>
+                </a>
+              </div>
+            </div>
+            <!-- End Card # 4-->
+
+            <!-- Card # 5-->
+            <div class="projects__card" id="indian">
+              <div class="projects__card-text">
+                <header class="projects__card-header">
+                  <h3 class="projects__card-title">Indian Food</h3>
+                  <p class="projects__card-subtitle">Project #5</p>
+                </header>
+                <p class="projects__card-description">
+                  A website for a fictional Indian restaurant, featuring the
+                  typical pages including about, menu, and gallery of the food
+                  served. The focus was on web design and responsive design.
+                </p>
+                <p class="projects__card-tags">
+                  HTML, CSS/SCSS, JavaScript, GSAP
+                </p>
+              </div>
+              <div class="projects__card-img-container">
+                <img
+                  class="projects__card-img"
+                  src="./images/projects/indian-food.png"
+                  alt="Indian Food Site"
+                />
+              </div>
+              <div class="projects__card-buttons">
+                <a
+                  href="https://indian-restaurant.vercel.app/"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/view.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">View</span>
+                </a>
+                <a
+                  href="https://github.com/cnguyen-13/Indian-Restaurant"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/github.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">GitHub</span>
+                </a>
+              </div>
+            </div>
+            <!-- End Card # 5-->
+
+            <!-- Card # 6-->
+            <div class="projects__card" id="portfolio">
+              <div class="projects__card-text">
+                <header class="projects__card-header">
+                  <h3 class="projects__card-title">My Portfolio</h3>
+                  <p class="projects__card-subtitle">Project #6</p>
+                </header>
+                <p class="projects__card-description">
+                  Looks familiar? My personal portfolio using the half and half
+                  design. Used Figma to create mockup designs for phone, tablet,
+                  and desktop views and later transformed into code.
+                </p>
+                <p class="projects__card-tags">
+                  HTML, CSS/SCSS, JavaScript, GSAP, Figma
+                </p>
+              </div>
+              <div class="projects__card-img-container">
+                <img
+                  class="projects__card-img"
+                  src="./images/projects/portfolio.png"
+                  alt="Portfolio Site"
+                />
+              </div>
+              <div class="projects__card-buttons">
+                <a
+                  href="https://cnguyen-13.github.io/"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/view.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">View</span>
+                </a>
+                <a
+                  href="https://github.com/cnguyen-13/cnguyen-13.github.io"
+                  class="projects__card-button"
+                  role="button"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/misc/github.svg"
+                    alt=""
+                    class="projects__card-button-img"
+                  />
+                  <span class="projects__card-button-text">GitHub</span>
+                </a>
+              </div>
+            </div>
+            <!-- End Card # 6 -->
+          </div>
         </div>
-      </div>
-      </div>
-    </section>
-    <!-- End Skills -->
+        <!-- End of Projects Showcase -->
+      </section>
+      <!-- End Projects Section-->
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects portfolio__section">
-      <div class="projects__half projects__half--dark">
-        <section class="projects__text">
-          <h2 class="projects__title projects__text-piece">Projects</h2>
-          <p class="projects__paragraph projects__text-piece">These are projects created by me to
-            learn front-end technologies listed in the skills section above. All projects aside of ones from challenge
-            websites were designed by me in Figma (creating views at different
-            viewport sizes) before putting the design to code. Here you may choose to view the code that goes into each
-            project or simply view the end results yourself!
-          </p>
-          <section class="projects__sub-section">
-            <h3 class="projects__sub-title projects__text-piece">Projects List</h3>
-            <ul class="projects__list">
-              <li class="projects__list-item projects__text-piece"><a href="#weather" class="projects__page-link">1.
-                  Weather App</a></li>
-              <li class="projects__list-item projects__text-piece"><a href="#cookbook" class="projects__page-link">2.
-                  The Cookbook Reference</a></li>
-              <li class="projects__list-item projects__text-piece"><a href="#easybank" class="projects__page-link">3.
-                  Easybank Challenge</a></li>
-              <li class="projects__list-item projects__text-piece"><a href="#room" class="projects__page-link">4. Room
-                  homepage Challenge</a></li>
-              <li class="projects__list-item projects__text-piece"><a href="#indian" class="projects__page-link">5.
-                  Indian Restaurant</a></li>
-              <li class="projects__list-item projects__text-piece"><a href="#portfolio" class="projects__page-link">6.
-                  Portfolio</a></li>
-            </ul>
-          </section>
-        </section>
-      </div>
-      
-      <!-- Projects Showcase -->
-      <div class="projects__half projects__half--light">
-        <div class="projects__cards">
-
-          <!-- Card # 1-->
-          <div class="projects__card" id="weather">
-            <div class="projects__card-text">
-              <header class="projects__card-header">
-                <h3 class="projects__card-title">Weather App</h3>
-                <p class="projects__card-subtitle">Project #1</p>
-              </header>
-              <p class="projects__card-description">
-                A Weather App that allows the user to
-                choose any city in the world and view
-                real time data about the weather,
-                temperatures, wind speeds, and more in
-                either metric or imperial units.</p>
-              <p class="projects__card-tags">HTML, CSS/SASS, Typescript, ReactJS, Figma, API Consumption</p>
+      <!-- Contact -->
+      <section class="contact portfolio__section" id="contact">
+        <div class="contact__half">
+          <form
+            class="contact__form"
+            action="https://formspree.io/f/xbjqygeq"
+            method="POST"
+          >
+            <h2 class="contact__title contact__text-piece">Contact</h2>
+            <p class="contact__paragraph contact__text-piece">
+              If you have any questions, comments, or concerns, leave your name,
+              your email address, and message. I will reply as soon as humanly
+              possible! Thank you!
+            </p>
+            <div class="contact__group contact__text-piece">
+              <label class="contact__label" for="name"
+                >Full Name: <span class="contact__asterick">*</span></label
+              >
+              <input
+                type="text"
+                name="name"
+                class="contact__input"
+                id="name"
+                placeholder="Your name..."
+                required
+              />
             </div>
-            <div class="projects__card-img-container">
-              <img class="projects__card-img" src="./images/projects/weather-app.png" alt="Weather App Site">
+            <div class="contact__group contact__text-piece">
+              <label class="contact__label" for="email"
+                >Email Address: <span class="contact__asterick">*</span></label
+              >
+              <input
+                type="email"
+                name="email"
+                class="contact__input"
+                id="email"
+                placeholder="Your email..."
+                required
+              />
             </div>
-            <div class="projects__card-buttons">
-              <a href="https://new-weather-app-cnguyen-13.vercel.app/" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/view.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">View</span>
-              </a>
-              <a href="https://github.com/cnguyen-13/your-weather-app" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/github.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">GitHub</span>
-              </a>
+            <div class="contact__group contact__text-piece">
+              <label class="contact__label" for="message"
+                >Message: <span class="contact__asterick">*</span></label
+              >
+              <textarea
+                name="message"
+                class="contact__input contact__input--lg"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your message..."
+                required
+              ></textarea>
             </div>
-          </div>
-          <!-- End Card # 1-->
-
-          <!-- Card # 2-->
-          <div class="projects__card" id="cookbook">
-            <div class="projects__card-text">
-              <header class="projects__card-header">
-                <h3 class="projects__card-title">Cookbook Reference</h3>
-                <p class="projects__card-subtitle">Project #2</p>
-              </header>
-              <p class="projects__card-description">Users looking for new and delicious recipes can do just that! Using
-                the Spoonacular API, this project allows users to filter results based on ingredients, nutritional
-                values, and much more.
-              </p>
-              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript, React, GSAP, API consumption, Local Storage.
-              </p>
-            </div>
-            <div class="projects__card-img-container">
-              <img class="projects__card-img" src="./images/projects/tcr.png" alt="The Cookbook Reference Site">
-            </div>
-            <div class="projects__card-buttons">
-              <a href="https://the-cookbook-reference-2.vercel.app/" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/view.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">View</span>
-              </a>
-              <a href="https://github.com/cnguyen-13/TRC-Remake" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/github.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">GitHub</span>
-              </a>
-            </div>
-          </div>
-          <!-- End Card # 2-->
-
-          <!-- Card # 3-->
-          <div class="projects__card" id="easybank">
-            <div class="projects__card-text">
-              <header class="projects__card-header">
-                <h3 class="projects__card-title">Easybank FM Challenge</h3>
-                <p class="projects__card-subtitle">Project #3</p>
-              </header>
-              <p class="projects__card-description">A Frontend Mentor Challenge used to focus on the ability to take a
-                design of a landing page
-                and transform it into reality through code.
-              </p>
-              <p class="projects__card-tags">HTML, CSS/SCSS</p>
-            </div>
-            <div class="projects__card-img-container">
-              <img class="projects__card-img" src="./images/projects/easy-bank.png" alt="Easybank FM Challenge Site">
-            </div>
-            <div class="projects__card-buttons">
-              <a href="https://easybank-landing-page-git-main-cnguyen-13.vercel.app/" class="projects__card-button"
-                role="button" target="_blank">
-                <img src="./images/misc/view.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">View</span>
-              </a>
-              <a href="https://github.com/cnguyen-13/easybank-landing-page" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/github.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">GitHub</span>
-              </a>
-            </div>
-          </div>
-          <!-- End Card # 3-->
-
-          <!-- Card # 4-->
-          <div class="projects__card" id="room">
-            <div class="projects__card-text">
-              <header class="projects__card-header">
-                <h3 class="projects__card-title">Room FM Challenge</h3>
-                <p class="projects__card-subtitle">Project #4</p>
-              </header>
-              <p class="projects__card-description">Another Frontend Mentor Challenge. Concepts focused on are CSS
-                Grid and a sliding to/from each different section using JavaScript.
-              </p>
-              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript</p>
-            </div>
-            <div class="projects__card-img-container">
-              <img class="projects__card-img" src="./images/projects/home-room.png"
-                alt="Room Home Page FM CHallenge Site">
-            </div>
-            <div class="projects__card-buttons">
-              <a href="https://room-homepage-kappa-five.vercel.app/" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/view.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">View</span>
-              </a>
-              <a href="https://github.com/cnguyen-13/room-homepage" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/github.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">GitHub</span>
-              </a>
-            </div>
-          </div>
-          <!-- End Card # 4-->
-
-          <!-- Card # 5-->
-          <div class="projects__card" id="indian">
-            <div class="projects__card-text">
-              <header class="projects__card-header">
-                <h3 class="projects__card-title">Indian Food</h3>
-                <p class="projects__card-subtitle">Project #5</p>
-              </header>
-              <p class="projects__card-description">A website for a fictional Indian
-                restaurant, featuring the typical pages
-                including about, menu, and gallery of
-                the food served. The focus was on web
-                design and responsive design.</p>
-              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript, GSAP</p>
-            </div>
-            <div class="projects__card-img-container">
-              <img class="projects__card-img" src="./images/projects/indian-food.png" alt="Indian Food Site">
-            </div>
-            <div class="projects__card-buttons">
-              <a href="https://indian-restaurant.vercel.app/" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/view.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">View</span>
-              </a>
-              <a href="https://github.com/cnguyen-13/Indian-Restaurant" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/github.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">GitHub</span>
-              </a>
-            </div>
-          </div>
-          <!-- End Card # 5-->
-
-          <!-- Card # 6-->
-          <div class="projects__card" id="portfolio">
-            <div class="projects__card-text">
-              <header class="projects__card-header">
-                <h3 class="projects__card-title">My Portfolio</h3>
-                <p class="projects__card-subtitle">Project #6</p>
-              </header>
-              <p class="projects__card-description">Looks familiar? My personal portfolio using the half and half
-                design. Used Figma to create mockup designs for phone, tablet, and desktop views and later transformed
-                into code.</p>
-              <p class="projects__card-tags">HTML, CSS/SCSS, JavaScript, GSAP, Figma</p>
-            </div>
-            <div class="projects__card-img-container">
-              <img class="projects__card-img" src="./images/projects/portfolio.png" alt="Portfolio Site">
-            </div>
-            <div class="projects__card-buttons">
-              <a href="https://cnguyen-13.github.io/" class="projects__card-button" role="button" target="_blank">
-                <img src="./images/misc/view.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">View</span>
-              </a>
-              <a href="https://github.com/cnguyen-13/cnguyen-13.github.io" class="projects__card-button" role="button"
-                target="_blank">
-                <img src="./images/misc/github.svg" alt="" class="projects__card-button-img">
-                <span class="projects__card-button-text">GitHub</span>
-              </a>
-            </div>
-          </div>
-          <!-- End Card # 6 -->
-
+            <input
+              class="contact__submit-btn contact__text-piece"
+              type="submit"
+              value="Send Message!"
+              role="button"
+            />
+          </form>
         </div>
-      </div>
-      <!-- End of Projects Showcase -->
-    </section>
-    <!-- End Projects Section-->
-
-    <!-- Contact -->
-    <section class="contact portfolio__section" id="contact">
-      <div class="contact__half contact__half--form">
-        <form action="https://formspree.io/f/xbjqygeq" method="POST" class="contact__form">
-          <h2 class="contact__title contact__text-piece">Contact</h2>
-          <p class="contact__paragraph contact__text-piece">If you have any questions, comments, or concerns, leave your
-            name, your email address, and message. I will reply as soon as humanly possible! Thank you!</p>
-          <div class="contact__group contact__text-piece">
-            <label class="contact__label" for="name">Full Name: <span class="contact__asterick">*</span></label>
-            <input type="text" name="name" class="contact__input" id="name" placeholder="Your name..." required>
-          </div>
-          <div class="contact__group contact__text-piece">
-            <label class="contact__label" for="email">Email Address: <span class="contact__asterick">*</span></label>
-            <input type="email" name="email" class="contact__input" id="email" placeholder="Your email..." required>
-          </div>
-          <div class="contact__group contact__text-piece">
-            <label class="contact__label" for="message">Message: <span class="contact__asterick">*</span></label>
-            <textarea name="message" class="contact__input contact__input--lg" id="message" cols="30" rows="10"
-              placeholder="Your message..." required></textarea>
-          </div>
-          <input type="submit" class="contact__submit-btn contact__text-piece" value="Send Message!" role="button">
-        </form>
-      </div>
-    </section>
-    <!-- End Contact -->
-
-  </main>
-  <!-- End Main Section -->
-
-</body>
+      </section>
+      <!-- End Contact -->
+    </main>
+    <!-- End Main Section -->
+  </body>
 </html>
